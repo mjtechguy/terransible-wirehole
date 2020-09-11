@@ -1,0 +1,43 @@
+---
+  - name: Ansible copy directory to the remote server
+    copy:
+      src: ./files/
+      dest: /wirehole
+
+  - name: Start Docker containers using Docker-Compose
+    command: docker-compose  -f /wirehole/docker-compose.yml up -d
+    register: output
+
+  - name: Watch docker-compose output
+    debug:
+      var: output
+
+  # - name: Pause for containers to come online and generate Wireguard client configs
+  #   pause:
+  #     minutes: 1
+
+  # - name: Zip Wireguard client files on remote machine
+  #   shell: find /wirehole/wireguard/config/ -name "peer*.conf" | tar -czvf /wirehole/wireguard.tar.gz -T -
+
+  # # - name: Copy Wireguard client files to local machine
+  # #   fetch:
+  # #     src: /wirehole/wireguard.tar.gz
+  # #     dest: ./files/
+  # #     flat: true
+
+  - name: Copy individual files
+    synchronize:
+      src: "{{ item }}"
+      dest: ./files/wg_client_configs
+      mode: pull
+    with_items:
+      - "/wirehole/wireguard/config/peer1"
+      - "/wirehole/wireguard/config/peer2"
+      - "/wirehole/wireguard/config/peer3"
+      - "/wirehole/wireguard/config/peer4"
+      - "/wirehole/wireguard/config/peer5"
+      - "/wirehole/wireguard/config/peer6"
+      - "/wirehole/wireguard/config/peer7"
+      - "/wirehole/wireguard/config/peer8"
+      - "/wirehole/wireguard/config/peer9"
+      - "/wirehole/wireguard/config/peer10"

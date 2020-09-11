@@ -1,0 +1,10 @@
+.terraform/
+*.tfstate*
+*.tfvars
+*.pem
+crash.log
+*wg_client_configs/
+*ansible.cfg
+inventory
+originals/
+.DS_Store
