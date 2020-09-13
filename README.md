@@ -39,7 +39,7 @@ Modifications from original Wirehole project:
   * Oracle Free Tier Availability Domain
 
 # Deploy Wirehole
-1.  clone this repo to your deployment machine (where you installed Terraform and Ansible)
+1. Clone this repo to your deployment machine (where you installed Terraform and Ansible)
 
 ```
 git clone https://github.com/mjtechguy/oci-wirehole
@@ -83,15 +83,15 @@ PublicKey = ABCDEFGHIJK1234567890ABCDEFGHIJK1234567890
 Endpoint = WIREHOLIP:51820
 AllowedIPs = 0.0.0.0/0, ::/0
   ```
-13. Start your Wireguard client and navigate to `http://10.2.0.100/admin` in your browser to reach the Pi-Hole admin panel. If you can reach it, everything should be working as expected!
+13. Start your Wireguard client and navigate to `http://10.2.0.100/admin` in your browser to reach the Pi-Hole admin panel. If you can reach it, everything should be working as expected.
 
 # Closing
 
 Thanks to Devin Stokes for the initial project and to the creators of Pi-Hole, Wireguard and Unbound.
 
 There are a few other tasks that you should do such as:
-* Secure port 22 on your OCI Wirehole instance to only allow access from your IP address
-* Backup your `terraform.state` file regularly or move the backend Terraform storage to S3 for easy state management from multiple machines. Don't forget to enable versioning on the bucket.
+* Secure port 22 on your OCI Wirehole instance to only allow access from your IP address or change the SSH port AND secure for extra security.
+* Backup your `terraform.state` file regularly or move the backend Terraform state storage to S3 for easy state management from multiple machines. Don't forget to enable versioning on the bucket.
 * Add more clients to the network using the additional Peer configuration files
 * Add more blocklists to your Pi-Hole for more effective ad blocking. Good collection of lists here: https://firebog.net/
 * Regularly running your Ansible playbook to make sure that your system and docker-containers are up to date.
@@ -106,6 +106,8 @@ Please open a Github issue if you have problems and I will try to assist when I 
 You can follow me on social media at the following:
 
 Twitter: https://twitter.com/mjtechguy
+
 Youtube: https://www.youtube.com/channel/UCyE6Fz8KPkALlWiG4Tvpv7g
+
 GitHub: https://github.com/mjtechguy
 
