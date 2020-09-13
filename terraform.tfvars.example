@@ -1,21 +1,26 @@
 # Oracle Cloud Infrastructure Authentication details
 # THIS IS NOT THE SAME AS YOUR NORMAL SSH KEY
 # Replace with the fingerprint of your oracle key
+# How to Generate an API Key: https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm#two
 oracle_api_key_fingerprint = "Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX"
 
-# Replace with the path to your private oracle key
+# Replace with the path to your private Oracle API signing key
 oracle_api_private_key_path = "/home/ubuntu/.oci/oci_api_key.pem"
 
 ###################
 # User OCID
+# API Key Guide: https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm
 user_ocid = "ocid1.user.oc1..aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
 ###################
 # Tenancy OCID
+# API Key Guide: https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm
 tenancy_ocid = "ocid1.tenancy.oc1..aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
 ###################
 # Compartment OCID
+# This is liekly the same as the "Tenancy OCID" from above
+# API Key Guide: https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm
 compartment_ocid = "ocid1.tenancy.oc1..aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
 ###################
