@@ -107,7 +107,7 @@ You can follow me on social media at the following:
 
 Twitter: https://twitter.com/mjtechguy
 
-Youtube: https://www.youtube.com/channel/UCyE6Fz8KPkALlWiG4Tvpv7g
+Youtube: https://www.youtube.com/channel/UCjrGJ7W90ZT2Cw9oLrEFztA
 
 GitHub: https://github.com/mjtechguy
 
