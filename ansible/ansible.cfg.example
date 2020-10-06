@@ -1,5 +1,5 @@
 [defaults]
-inventory = inventory
+inventory = ./inventory/
 nocows = true
 host_key_checking = False
 

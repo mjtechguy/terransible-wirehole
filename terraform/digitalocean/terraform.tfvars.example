@@ -1,0 +1,27 @@
+# Your Digital Ocean API toke
+# If you don't already have one, login to DO, go to "API", "Tokens/Keys", "Personal Access Tokens", "Generate New Token"
+do_token = "abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz12"
+
+# The SSH key fingerprint of an SSH key you have in your DO console
+# This can be located by logging into DO, "Settings", "Security" and locating the "Fingerprint" field under "SSH Keys".
+do_ssh_key = "Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX"
+
+# Fill in the local path to the private key of the ssh key
+ssh_private_key_path = "~/path_to_your/id_rsa"
+
+# The Digital Ocean region where you want to deploy the droplet
+region = "nyc3"
+
+# The name you want for the droplet in the DO console and the default name on the OS
+droplet_name = "wireHole"
+
+# The Image you want to use for DO. This is configured and tested to work with Ubuntu 16.04+
+# For the full list of DO images, install `doctl` and run `doctl compute image list --public`
+droplet_image = "ubuntu-20-04-x64"
+
+# The droplet size
+# For the full list of DO droplet sizes, install `doctl` and run `doctl compute size list`
+droplet_size = "s-1vcpu-1gb"
+
+
+
