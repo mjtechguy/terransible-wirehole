@@ -1,4 +1,4 @@
-# Wirehole on Oracel Cloud Infrastructure (OCI)
+# Wirehole on Oracle Cloud Infrastructure (OCI)
 
 Terraform for deploying the Wirehole deployment onto OCI. If you choose the default instance and you haven't already used your 2 free OCI instances, it should cost $0 USD a month.
 
