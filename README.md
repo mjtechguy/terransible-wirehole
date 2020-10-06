@@ -44,6 +44,13 @@ You can see more Terransible projects at https://terransible.com
 
 * Install Terraform on the machine you will be launching this project from: https://learn.hashicorp.com/tutorials/terraform/install-cli
 * Install Ansible on the machine you will be launching this project from: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+* Clone this repo to your deployment machine (where you installed Terraform and Ansible)
+
+```
+git clone https://github.com/mjtechguy/terransible-wirehole
+cd terransible-wirehole
+terraform init
+```
 
 # Deploying
 
@@ -66,9 +73,9 @@ There are a few other tasks that you should do such as:
 
 Please open a Github issue if you have problems and I will try to assist when I have time.
 
-# Socials
+# Social
 
-You can follow me on social media at the following:
+You can engage with me on social media at the following:
 
 Twitter: https://twitter.com/mjtechguy
 

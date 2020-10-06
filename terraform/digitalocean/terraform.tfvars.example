@@ -9,11 +9,13 @@ do_ssh_key = "Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX"
 # Fill in the local path to the private key of the ssh key
 ssh_private_key_path = "~/path_to_your/id_rsa"
 
+#### Optional ####
+
 # The Digital Ocean region where you want to deploy the droplet
 region = "nyc3"
 
 # The name you want for the droplet in the DO console and the default name on the OS
-droplet_name = "wireHole"
+droplet_name = "wirehole"
 
 # The Image you want to use for DO. This is configured and tested to work with Ubuntu 16.04+
 # For the full list of DO images, install `doctl` and run `doctl compute image list --public`

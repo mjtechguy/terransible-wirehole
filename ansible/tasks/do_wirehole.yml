@@ -19,7 +19,7 @@
   - name: Copy individual files
     synchronize:
       src: "{{ item }}"
-      dest: ./files/wg_client_configs/do
+      dest: ../wg_client_configs/do
       mode: pull
     with_items:
       - "/wirehole/wireguard/config/peer1"

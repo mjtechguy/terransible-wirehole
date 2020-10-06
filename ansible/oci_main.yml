@@ -1,6 +1,6 @@
 ---
 - name: Install Docker Docker-Compose and dependencies.
-  hosts: all
+  hosts: oci
   become: true
   vars:
     DOCKER_COMPOSE_VERSION: "1.27.1"
