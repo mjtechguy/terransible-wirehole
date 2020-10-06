@@ -1,10 +1,10 @@
 ---
 - name: Install Docker Docker-Compose and dependencies.
-  hosts: all
+  hosts: do
   become: true
   vars:
     DOCKER_COMPOSE_VERSION: "1.27.1"
-    USER: "ubuntu"
+    USER: "root"
 
   pre_tasks:
     - import_tasks: tasks/pretasks.yml
@@ -12,7 +12,7 @@
   tasks:
     - import_tasks: tasks/docker.yml
     - import_tasks: tasks/dockercompose.yml
-    - import_tasks: tasks/wirehole.yml
+    - import_tasks: tasks/do_wirehole.yml
 
   post_tasks:
     - import_tasks: tasks/posttasks.yml

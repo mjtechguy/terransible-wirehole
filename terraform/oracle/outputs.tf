@@ -22,5 +22,5 @@ data  "template_file" "ansible-inventory" {
 }
 resource "local_file" "wirehole_inventory" {
   content  = data.template_file.ansible-inventory.rendered
-  filename = "./ansible/inventory"
+  filename = "../../ansible/inventory/oci_inventory"
 }

@@ -12,23 +12,14 @@
     debug:
       var: output
 
-  # - name: Pause for containers to come online and generate Wireguard client configs
-  #   pause:
-  #     minutes: 1
-
-  # - name: Zip Wireguard client files on remote machine
-  #   shell: find /wirehole/wireguard/config/ -name "peer*.conf" | tar -czvf /wirehole/wireguard.tar.gz -T -
-
-  # # - name: Copy Wireguard client files to local machine
-  # #   fetch:
-  # #     src: /wirehole/wireguard.tar.gz
-  # #     dest: ./files/
-  # #     flat: true
+  - name: Pause for 15 seconds to generate Wireguard client configs
+    pause:
+      seconds: 15
 
   - name: Copy individual files
     synchronize:
       src: "{{ item }}"
-      dest: ./files/wg_client_configs
+      dest: ../wg_client_configs/oci
       mode: pull
     with_items:
       - "/wirehole/wireguard/config/peer1"
