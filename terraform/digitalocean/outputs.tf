@@ -13,15 +13,14 @@ output "public_ip" {
     value       = digitalocean_droplet.wirehole.ipv4_address
 }
 
-data  "template_file" "ansible-inventory" {
-    template = "${file("inventory.tmpl")}"
-    vars = {
-        wirehole_ip = digitalocean_droplet.wirehole.ipv4_address
-        private_key = var.ssh_private_key_path
-    }
+locals {
+  ansible-inventory = templatefile("inventory.tmpl", {
+    wirehole_ip = digitalocean_droplet.wirehole.ipv4_address
+    private_key = var.ssh_private_key_path
+  })
 }
 
 resource "local_file" "wirehole_inventory" {
-  content  = data.template_file.ansible-inventory.rendered
+  content  = local.ansible-inventory
   filename = "../../ansible/inventory/do_inventory"
 }

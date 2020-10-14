@@ -4,7 +4,8 @@
 # How to Generate an API Key: https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm#two
 oracle_api_key_fingerprint = "Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX"
 
-# Replace with the path to your private Oracle API signing key
+# Replace with the path to your private oracle key
+# Do not use relative path or `~` here. Please specify the full path or you may encounter an error.
 oracle_api_private_key_path = "/home/ubuntu/.oci/oci_api_key.pem"
 
 ###################
