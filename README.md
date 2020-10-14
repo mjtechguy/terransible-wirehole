@@ -30,7 +30,7 @@ You can see more Terransible projects at https://terransible.com
 * Allow for deployment to the following providers:
   * Oracle Cloud Infrastructure (OCI)
   * Digital Ocean (DO)
-  * ~~Hetzner Cloud (HETZNER)~~ - COMING SOON
+  * Hetzner Cloud (HCLOUD)
   * ~~Amazon Web Services (AWS)~~ - COMING SOONISH
   * ~~Google Cloud Platform (GCP)~~ - COMING LESS SOON
   * ~~Microsoft Azure (AZURE)~~ - MAYBE ONE DAY
@@ -54,8 +54,9 @@ terraform init
 
 # Deploying
 
-* OCI Instruction: [./terraform/oracle/README.md](./terraform/oracle/README.md)
-* DO Instruction: [./terraform/digitalocean/README.md](./terraform/digitalocean/README.md)
+* [Oracle Cloud Instruction](./terraform/oracle/README.md)
+* [Digital Ocean Instruction](./terraform/digitalocean/README.md)
+* [Hetzner Cloud Instruction](./terraform/hetzner/README.md)
 
 # Closing
 
