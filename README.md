@@ -12,9 +12,9 @@ This project is provided with no warranty or guarantee of functionality or secur
 
 # What is Terransible
 
-**Terransible** is the combination of Terraform and Ansible to deploy and manage infrastructure. Terraform is used to deploy the infrastructure and track its state. Ansible is used a the configuration management tool to ensure that the OS on the systems does not drift from our declarative configuration.
+**Terransible** is the combination of Terraform and Ansible to deploy and manage infrastructure. Terraform is used to deploy the infrastructure and track its state. Ansible is used as the configuration management tool to ensure that the OS does not drift from our declarative configuration.
 
-You can see more Terransible projects at https://terransible.com
+You can see more Terransible projects at https://terransible.com - COMING SOON
 
 # Technologies Used
 
