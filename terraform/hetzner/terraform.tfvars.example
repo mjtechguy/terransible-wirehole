@@ -1,0 +1,29 @@
+# Your Hetzner API token
+# If you don't already have one, login to Hetzner Cloud, click on your project, click on "Security", "API Tokens" and generate a new token.
+hcloud_token = "abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz12"
+
+# The SSH key name of an SSH key you have in your Hetzner Cloud console
+# This can be located by logging into Hetzner Cloud, click on your project, click on "Security", and locating the "Name" field under "SSH Keys"
+hcloud_ssh_key = "your-key-name"
+
+# Fill in the local path to the private key of the ssh key
+ssh_private_key_path = "~/path_to_your/id_rsa"
+
+#### Optional ####
+
+# The Hetzner Cloud region where you want to deploy the droplet
+server_location = "hel1"
+
+# The name you want for the droplet in the DO console and the default name on the OS
+server_name = "wirehole"
+
+# The Image you want to use for DO. This is configured and tested to work with Ubuntu 16.04+
+# For the full list of DO images, install `doctl` and run `doctl compute image list --public`
+server_image = "ubuntu-20.04"
+
+# The droplet size
+# For the full list of DO droplet sizes, install `doctl` and run `doctl compute size list`
+server_type = "cx11"
+
+
+
