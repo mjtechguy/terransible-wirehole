@@ -33,7 +33,7 @@ region = "us-ashburn-1"
 # Free Tier Availability Domain
 # Login into OCI, go to Main Menu, "Governance", "Limits, Quotas and Usage", and find which Availability Domain
 # you have a service limit of 2 for "Cores for Standard.E2.1.Micro VM Instances". Enter that AD below.
-free_tier_availabilty_domain = "pftX:US-ASHBURN-AD-3"
+free_tier_availability_domain = "pftX:US-ASHBURN-AD-3"
 
 ###################
 # Your SSH Details used to access the server
