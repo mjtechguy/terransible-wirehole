@@ -1,11 +1,5 @@
 # TERRANSIBLE-WIREHOLE
 
-This project is based on the excellent Wirehole project by Devin Stokes found below:
-
-Repo: https://github.com/IAmStoxe/wirehole
-
-Blog: https://medium.com/@devinjaystokes/automating-the-deployment-of-your-forever-free-pihole-and-wireguard-server-dce581f71b7
-
 # Disclaimer
 
 This project is provided with no warranty or guarantee of functionality or security. This is a proof of concept and should be implemented with caution and additional security measures to ensure it is secure and stable.
@@ -16,7 +10,7 @@ This project is provided with no warranty or guarantee of functionality or secur
 
 You can see more Terransible projects at https://terransible.com - COMING SOON
 
-# Technologies Used
+# Technologies
 
 * [Docker](https://docs.docker.com/engine/)
 * [Terraform](https://www.terraform.io/)
@@ -31,7 +25,7 @@ You can see more Terransible projects at https://terransible.com - COMING SOON
   * Oracle Cloud Infrastructure (OCI)
   * Digital Ocean (DO)
   * Hetzner Cloud (HCLOUD)
-  * ~~Amazon Web Services (AWS)~~ - COMING SOONISH
+  * Amazon Web Services (AWS)
   * ~~Google Cloud Platform (GCP)~~ - COMING LESS SOON
   * ~~Microsoft Azure (AZURE)~~ - MAYBE ONE DAY
 * Terraform output saves the public IP of the Wirehole server that is created to an Ansible Inventory file
@@ -54,13 +48,29 @@ terraform init
 
 # Deploying
 
-* [Oracle Cloud Instruction](./terraform/oracle/README.md)
-* [Digital Ocean Instruction](./terraform/digitalocean/README.md)
-* [Hetzner Cloud Instruction](./terraform/hetzner/README.md)
+* [Oracle Cloud (OCI) Instructions](./terraform/oracle/README.md)
+* [Digital Ocean (DO) Instructions](./terraform/digitalocean/README.md)
+* [Hetzner Cloud (HCLOUD) Instructions](./terraform/hetzner/README.md)
+* [Amazon Web Services (AWS) Instructions](./terraform/aws/README.md)
 
-# Closing
+# Teardown
+
+* To teardown any of your environments, cd into the appropriate `./terraform/*` directory for the appropriate provider and run `terraform destroy --auto-approve`.
+* Delete any old client configs on the `wg_client_config` directory for the deleted environment
+* Delete the `./ansible/*_inventory` file for the deleted environment
+
+# Link To Original and Thanks
+
+This project is based on the excellent Wirehole project by Devin Stokes found below:
+
+Repo: https://github.com/IAmStoxe/wirehole
+
+Blog: https://medium.com/@devinjaystokes/automating-the-deployment-of-your-forever-free-pihole-and-wireguard-server-dce581f71b7
 
 Thanks to Devin Stokes for the initial project and to the creators of Pi-Hole, Wireguard and Unbound.
+
+
+# Closing
 
 There are a few other tasks that you should do such as:
 * Secure port 22 on your Wirehole instance to only allow access from your IP address or change the SSH port AND secure for extra security.

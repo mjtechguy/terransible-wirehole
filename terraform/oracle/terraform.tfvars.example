@@ -6,7 +6,12 @@ oracle_api_key_fingerprint = "Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX:Xx:xX"
 
 # Replace with the path to your private oracle key
 # Do not use relative path or `~` here. Please specify the full path or you may encounter an error.
+# Per issue #6 (https://github.com/mjtechguy/terransible-wirehole/issues/6) this may still occur even if
+# you have the full path and permissions set. If it does, place the .pem file in this directory next to the .tf files.
+# There is a .pem exclusion in the .gitignore file.
+# oracle_api_private_key_path = "./oci_api_key.pem" #move file here and use if error occurs
 oracle_api_private_key_path = "/home/ubuntu/.oci/oci_api_key.pem"
+
 
 ###################
 # User OCID

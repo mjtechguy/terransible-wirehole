@@ -5,6 +5,6 @@
 crash.log
 *wg_client_configs/
 *ansible.cfg
-inventory
 originals/
 .DS_Store
+*_inventory
