@@ -1,0 +1,18 @@
+# Your AWS Access key obtained from your IAM page. Must have EC2 permissions.
+aws_access_key = "AKIAxxxxxxxxxxxxxxxx"
+
+# Your AWS Secret key obtained from your IAM page.
+aws_secret_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# The region you want to deploy into
+aws_region     = "us-east-1"
+
+# The name of the AWS SSH key in your account that you want to use for this instance
+key_name       = "your_aws_key_name"
+
+# The local path to the private SSH .pem file for the above SSH key
+ssh_private_key_path = "/home/ubuntu/.ssh/keyname.pem"
+
+# Optional
+# The instance type you want to use. t3.nano should be sufficient.
+instance_type  = "t3.nano"
