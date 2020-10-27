@@ -36,7 +36,7 @@ PublicKey = ABCDEFGHIJK1234567890ABCDEFGHIJK1234567890
 Endpoint = WIREHOLEIP:51820
 AllowedIPs = 10.2.0.0/24
   ```
-  * If you want all traffic to flow through through the VPN (there is a 1TB monthly limit on default Digital Ocean 1cpu/1GB droplet, so be aware) then you do not need to update the `Allowed IPs`, but you will still want to update your client DNS.
+  * If you want all traffic to flow through through the VPN (there is no traffic included, and outbound traffic is what is billed on. Be aware of this as it can get extremely expensive if you choose to route all traffic through this instance.) then you do not need to update the `Allowed IPs`, but you will still want to update your client DNS.
   ```
   [Interface]
 Address = 10.6.0.2
