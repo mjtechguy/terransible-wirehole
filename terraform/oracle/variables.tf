@@ -60,5 +60,5 @@ variable "instance_image_ocid" {
     us-luke-1        = "ocid1.image.oc2.us-luke-1.aaaaaaaanh73rftzyh7wtrouhuvn3iee4uyyvvuddtzryue5srnstl3o3ima"
     us-phoenix-1     = "ocid1.image.oc1.phx.aaaaaaaao3t2yjoowutaq2h66d5i4h424i2tyhycad7qeqpryjit4phv2t7q"
     us-sanjose-1     = "ocid1.image.oc1.us-sanjose-1.aaaaaaaagodsnhz5md2r6iusytuqjgq35omfj2phd4tzelwr7xfcw7u6mmia"
+  }
 }
-
