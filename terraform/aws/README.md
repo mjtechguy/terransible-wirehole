@@ -15,8 +15,8 @@ Terraform for deploying the Wirehole deployment onto AWS. If you choose the defa
 2. Copy the `terraform.tfvars.example` file to `terraform.tfvars`
 3. Update **ALL** of the values above the Optional section at the bottom
 4. Run `terraform plan` and if this completes without any errors, proceed to the next step
-5. Run `terraform apply --auto-approve` and wait for the deployment to finish. When it is complete you should see a new `do-inventory` file in the `ansible/inventory` directory
-6. Change into the `ansible` directory by running `cd ansible`
+5. Run `terraform apply --auto-approve` and wait for the deployment to finish. When it is complete you should see a new `aws_inventory` file in the `ansible/inventory` directory
+6. Change into the `ansible` directory by running `cd ../../ansible`
 7. Copy the `ansible.cfg.example` to `ansible.cfg`. The default values provided will work, but feel free to update to your liking if you are familiar with Ansible
 8. Run `ansible aws -m ping` and make sure it returns a `pong` confirming your connectivity. If there are no errors, move the the next step.
 9. Run `anible-playbook aws_main.yml` and it will run through all of the provisioning steps and reboot the Wirehole host once to install updates.
