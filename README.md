@@ -10,6 +10,14 @@ This project is provided with no warranty or guarantee of functionality or secur
 
 You can see more Terransible projects at https://terransible.com - COMING SOON
 
+# Why Does Terransible Wirehole Exist?
+
+Terransible Wirehole exists because I wanted to make it easy for anyone to manage their own VPN servers on all of the major providers. You should not be locked into a single provider and you should not have to use one of the commercial VPN providers either.
+
+As for why Wirehole exists, I can only speculate. But if I had to guess, it was created because you should have the freedom to roam the web without being overwhelmingly advertised to and tracked. You and you entire household (or even company) deserve a better experience and it is now within your own power to provide that experience on your own terms using PiHole and other tools.
+
+We hope you find this empowering and please contribute where you see fit so that all may benefit.
+
 # Technologies
 
 * [Docker](https://docs.docker.com/engine/)
